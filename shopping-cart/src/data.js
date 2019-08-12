@@ -2,7 +2,7 @@ export const storeProducts = [
     {
       id: 1,
       title: "T-shirt 1",
-      img: "/img/product-1.png",
+      img: "%PUBLIC_URL%/img/produc-1.png",
       price: 10,
       type: "T-shirt",
       info:
