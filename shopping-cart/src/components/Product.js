@@ -15,7 +15,7 @@ class Product extends Component {
               <div className="img-container p-2"
               onClick = {() => value.handleDetail(id)}
               >
-                <Link to="details">
+                <Link to="/Shopping-Cart/details">
                   <img src={img} width="200px" height="350px" alt={title} className="card-img-top" />  
                 </Link>
                 <button className="cart-btn" disabled={inCart ? true : false}

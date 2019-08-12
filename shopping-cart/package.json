@@ -2,7 +2,9 @@
   "name": "shopping-cart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://july26th.github.io/Shopping-Cart/",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
@@ -10,6 +12,8 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

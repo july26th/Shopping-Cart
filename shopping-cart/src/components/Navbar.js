@@ -12,14 +12,14 @@ class Cart extends Component {
         {value => { return (
         <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
           <div className="left-nav ">
-            <Link to="/">
+            <Link to="/Shopping-Cart">
               <img width="90" height="70" src={logo} alt="shop" className="navbar-brand" />
             </Link>
-            <Link to="/">
+            <Link to="/Shopping-Cart">
             <span className="nav-link" onClick={() => value.onFilter('')}>Home</span>
             </Link>
           </div>
-          <Link to="/cart" className="ml-auto">
+          <Link to="/Shopping-Cart/cart" className="ml-auto">
             <ButtonContainer>
               <i className="fa fa-shopping-cart" /> My Cart
                  </ButtonContainer>

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context';
-import PropTypes from 'prop-types';
 import { ButtonContainer } from './Navbar';
 class Details extends Component {
 
@@ -38,7 +36,7 @@ class Details extends Component {
                   </p>
                   <p className="text-muted lead">{info}</p>
                   <div>
-                    <Link to="/">
+                    <Link to="/Shopping-Cart">
                       <ButtonContainer>
                         Back To Products
                       </ButtonContainer>

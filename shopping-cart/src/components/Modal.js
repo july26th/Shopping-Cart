@@ -22,15 +22,15 @@ class Modal extends Component {
                     <div className="row">
                       <div id="modal" className="col-8 col-md-6 col-lg-5 mx-auto text-center p-4">
                         <h5 className="text-title font-weight-bold border-bottom"> Added To Cart Successfully</h5>
-                        <img src={img} className="img-fluid" style={{height:"360px", width:"70%"}} />
+                        <img src={img} className="img-fluid" alt={title} style={{height:"360px", width:"70%"}} />
                         <h5>{title}</h5>
                         <h5 className="text-mutede">Price: ${price}</h5>
-                        <Link to="/">
+                        <Link to="/Shopping-Cart">
                           <ButtonContainer onClick={() => closeModal()}>
                             Countinue Shopping
                           </ButtonContainer>
                         </Link>
-                        <Link to="/cart">
+                        <Link to="/Shopping-Cart/cart">
                           <ButtonContainer cart onClick={() => closeModal()}>
                             Go To Cart
                           </ButtonContainer>

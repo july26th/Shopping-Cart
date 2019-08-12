@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { ProductConsumer } from '../context';
 class CartItem extends Component {
 
   render() {
@@ -8,7 +7,7 @@ class CartItem extends Component {
     return (
       <div className="row my-2 text-center">
         <div className="col-10 col-lg-2 cart-item">
-          <img src={img} className="cart-img img-fluid" />
+          <img src={img} className="cart-img img-fluid" alt={title} />
         </div>
         <div className="col-10 col-lg-2 cart-item">
           <span className="d-lg-none">Product:</span>  {title}
