@@ -8,14 +8,14 @@ class Product extends Component {
   render() {
       const { id, title, img, price, inCart } = this.props.product;
       return (
-        <ProductWrapper className="col-9 col-md-6 col-lg-4 mx-auto my-3">
+        <ProductWrapper className="col-9 col-md-6 col-lg-3 mx-auto my-3">
             <div className="card">
               <ProductConsumer>
             {value => (
               <div className="img-container p-2"
               onClick = {() => value.handleDetail(id)}
               >
-                <Link to="/Shopping-Cart/details">
+                <Link to="/details">
                   <img src={img} width="200px" height="350px" alt={title} className="card-img-top" />  
                 </Link>
                 <button className="cart-btn" disabled={inCart ? true : false}

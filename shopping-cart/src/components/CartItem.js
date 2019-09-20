@@ -6,28 +6,29 @@ class CartItem extends Component {
     const { increment, decrement, removeItem } = this.props.value;
     return (
       <div className="row my-2 text-center">
-        <div className="col-10 col-lg-2 cart-item">
+        <div className="col-1 cart-item">
+          <div className="cart-icon" onClick={() => removeItem(id)}><i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div className="col-2 cart-item">
           <img src={img} className="cart-img img-fluid" alt={title} />
         </div>
-        <div className="col-10 col-lg-2 cart-item">
-          <span className="d-lg-none">Product:</span>  {title}
+        <div className="col-3 cart-item">
+           {title}
         </div>
-        <div className="col-10 col-lg-2 cart-item">
-          <span className="d-lg-none">Price: </span> ${price}
+        <div className="col-2 cart-item">
+           ${price}
         </div>
-        <div className="col-10 col-lg-2 cart-item">
+        <div className="col-2 cart-item">
           <div className="d-flex justify-content-center">
             <span className="btn btn-black mx-1" onClick={() => decrement(id)}>-</span>
             <span className="btn btn-black mx-1">{count}</span>
             <span className="btn btn-black mx-1" onClick={() => increment(id)}>+</span>
           </div>
         </div>
-        <div className="col-10 col-lg-2 cart-item">
-          <div className="cart-icon" onClick={() => removeItem(id)}><i className="fa fa-trash-o" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div className="col-10 col-lg-2 cart-item">
-          <strong  className="d-lg-none">Item Total:</strong>  ${total}
+
+        <div className="col-2 cart-item font-weight-bold">
+          ${total}
         </div>
       </div>
     );

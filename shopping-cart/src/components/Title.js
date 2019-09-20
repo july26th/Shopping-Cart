@@ -6,9 +6,9 @@ class Title extends Component {
 
       return (
         <div className="row main-title text-title mx-auto my-2">
-        <h1 className="font-weight-bold title">
+        <h2 className="font-weight-bold title mb-0">
           {this.props.name} <strong className="text-blue">{this.props.title}</strong>
-        </h1>
+        </h2>
         </div>
       );
               

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Title from './Title';
 import Product from './Product';
 import Category from './Category';
+import Slider from './Slider';
 import { ProductConsumer } from '../context';
 class ProductList extends Component {
 
@@ -9,13 +9,14 @@ class ProductList extends Component {
 
     return (
       <React.Fragment>
-        <div className="container-fluid">
+        <Slider />
+        <div className="container">
           <div className="row">
-            <Title name="Our" title="Products" />
-            <div className="col-lg-3">
+            <h4 className="text-center text-title font-weight-bold w-100 mt-4">NEW ARRIVAL</h4>
+            <div className="col-lg-12">
               <Category />
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-12">
               <div className="row">
                 <ProductConsumer>
                   {value => {

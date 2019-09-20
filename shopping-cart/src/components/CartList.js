@@ -4,8 +4,6 @@ import { ProductConsumer } from '../context';
 class CartList extends Component {
 
   render() {
-    // const {value} = this.props;
-    // console.log(value.cart);
     return (
       <div className="container-fluid text-center">
       <ProductConsumer>

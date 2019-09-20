@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import logo from "../logo.svg";
 import styled from 'styled-components';
 import { ProductConsumer } from '../context';
 class Cart extends Component {
@@ -9,24 +8,44 @@ class Cart extends Component {
 
     return (
       <ProductConsumer>
-        {value => { return (
-        <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
-          <div className="left-nav ">
-            <Link to="/Shopping-Cart">
-              <img width="90" height="70" src={logo} alt="shop" className="navbar-brand" />
-            </Link>
-            <Link to="/Shopping-Cart">
+        {value => {
+          return (
+
+            <nav>
+              <div className="container nav-bar">
+                <div className="left-nav">
+                  <Link to="/">
+                    <img src="img/logo.png" alt="" />
+                  </Link>
+                </div>
+                <div className="center-nav">
+                  <Link to="/"><p>Home</p></Link>
+                  <Link to="/"><p>Pages</p></Link>
+                  <Link to="/"><p>Shop</p></Link>
+                  <Link to="/"><p>Blog</p></Link>
+                  <Link to="/"><p>Portfolio</p></Link>
+                  <Link to="/"><p>Elements</p></Link>
+                  {/* <Link to="/"> 
             <span className="nav-link" onClick={() => value.onFilter('')}>Home</span>
-            </Link>
-          </div>
-          <Link to="/Shopping-Cart/cart" className="ml-auto">
-            <ButtonContainer>
+            </Link> */}
+                </div>
+                <div className="right-nav">
+                  <Link to="/"><i class="fas fa-search    "></i></Link>
+                  <Link to="/cart"><i class="fas fa-shopping-cart"></i></Link>
+                  <Link to="/"><i class="fas fa-bars    "></i></Link>
+                </div>
+                {/* <Link to="/cart" className="ml-auto"> */}
+                {/* <ButtonContainer>
               <i className="fa fa-shopping-cart" /> My Cart
-                 </ButtonContainer>
-          </Link>
-        </NavWrapper>
-        )}}
-      </ProductConsumer>
+                 </ButtonContainer> */}
+                {/* </Link> */}
+              </div>
+            </nav>
+
+          )
+        }
+        }
+      </ProductConsumer >
     );
 
   }
@@ -53,10 +72,10 @@ export const ButtonContainer = styled.button`
     outline: none;
   }
 `
-const NavWrapper = styled.nav`
-  background: var(--mainBlue) !important;
-  .nav-link{
-    color: var(--mainWhite) !important;
-    font-size: 1.3rem;
-  }
-`
+// const NavWrapper = styled.nav`
+//   background: var(--mainWhite) !important;
+//   .nav-link{
+//     color: var(--mainWhite) !important;
+//     font-size: 1.3rem;
+//   }
+// `

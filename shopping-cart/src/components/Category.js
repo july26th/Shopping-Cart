@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Title from './Title';
 import { ProductConsumer } from '../context';
 class Category extends Component {
 
@@ -10,8 +9,7 @@ class Category extends Component {
         {value => {
           return (
             <div className="menu menu-prospero">
-              <Title name="Category" />
-              <ul className="nav flex-column menu-list">
+              <ul className="nav menu-list justify-content-center">
               <li className={value.filterName === ''? " menu-item menu-item-current" : " menu-item"}>
                   <p className="nav-link text-title menu-link" onClick = {() => {
                     value.onFilter('');

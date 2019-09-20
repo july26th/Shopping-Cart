@@ -25,12 +25,12 @@ class Modal extends Component {
                         <img src={img} className="img-fluid" alt={title} style={{height:"360px", width:"70%"}} />
                         <h5>{title}</h5>
                         <h5 className="text-mutede">Price: ${price}</h5>
-                        <Link to="/Shopping-Cart">
+                        <Link to="/">
                           <ButtonContainer onClick={() => closeModal()}>
                             Countinue Shopping
                           </ButtonContainer>
                         </Link>
-                        <Link to="/Shopping-Cart/cart">
+                        <Link to="/cart">
                           <ButtonContainer cart onClick={() => closeModal()}>
                             Go To Cart
                           </ButtonContainer>

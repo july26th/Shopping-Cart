@@ -6,25 +6,28 @@ class CartTotal extends Component {
     const { cartTotal, clearCart } = this.props.value;
     return (
       <React.Fragment>
-        <div className="container">
-          <div className="row">
-            <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-right text-capitalize">
-              
-              <h5>
-                <span className="text-title">
-                  Total: 
-                </span>
-                <strong>${cartTotal}</strong>
-              </h5>
-              <Link to="/Shopping-Cart">
-                <button className="btn btn-outline-danger text-uppercase mb-3 px-5" 
+            <div className="cart-total p-5">
+                <p className="text-title">
+                  Cart Totals 
+                </p>
+                <div className="cart-info">
+              <span>Subtotal </span>${cartTotal}
+              <div  className="d-flex">
+                <span>Shipping</span>
+              <div>
+              <p>Flat Rate: $20.00</p>
+              <p>Calculate Shipping</p>
+              </div>
+              </div>
+              </div>
+              <hr />
+            </div>
+            <Link to="/">
+                <button className="btn btn-dark w-100 text-uppercase mb-3 px-5" 
                 type="button" onClick={() => clearCart()}>
-                  Checkout
+                  Proceed To Checkout
                 </button>
               </Link>
-            </div>
-          </div>
-        </div>
       </React.Fragment>
     );
 
