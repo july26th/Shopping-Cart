@@ -11,7 +11,7 @@ class Details extends Component {
         {value => {
           const { id, type, img, info, price, title, inCart } = value.detailProduct;
           return (
-            <div className="container py-5">
+            <div className="container py-5 details">
               <div className="row">
                 <div className="col-col-10 mx-auto text-center text-blue my-3">
                   <h1>{title}</h1>
@@ -19,7 +19,7 @@ class Details extends Component {
               </div>
               <div className="row">
                 <div className="col-col-10 col-md-5 col-md-3 mx-auto my-3">
-                  <img src={img} className="img-fluid" alt={title} />
+                  <img src={`/${img}`} className="img-fluid" alt={title} />
                 </div>
                 <div className="col-col-10 col-md-7 col-md-3 mx-auto my-3">
                   <h2>Model: {title}</h2>
@@ -37,18 +37,14 @@ class Details extends Component {
                   <p className="text-muted lead">{info}</p>
                   <div>
                     <Link to="/">
-                      <ButtonContainer>
-                        Back To Products
-                      </ButtonContainer>
+                    <button type="button" class="btn btn-dark text-uppercase">Back To Products</button>
                     </Link>
-                    <ButtonContainer cart disabled={inCart ? true: false} 
+                      <button cart disabled={inCart ? true: false} 
                     onClick={() => {
                       value.addToCart(id);
                       value.openModal(id);
-                    }}
-                    >
-                      {inCart ? "In Cart" : "Add To Cart"}
-                    </ButtonContainer>
+                    }} type="button" class="btn btn-danger text-uppercase"> {inCart ? "In Cart" : "Add To Cart"}</button>
+                     
                   </div>
                 </div>
               </div>

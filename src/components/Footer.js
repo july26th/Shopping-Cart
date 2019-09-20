@@ -7,11 +7,11 @@ class Footer extends Component {
               <footer>
                 <div className="container">
                     <div className="row">
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-3 col-md-6 text-center">
                             <div><img alt="" src="img/logo.png" className="logo" /></div>
                             <p>Why I say old chap that is sping lavatory chip shop gosh off his, smashing boot are you taking.!!</p>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-3 col-md-6 text-center">
                             <p className="title">Our Stores</p>
                             <div className="content">
                                 <p>New York</p>
@@ -20,7 +20,7 @@ class Footer extends Component {
                                 <p>Vietnam</p>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-3 col-md-6 text-center">
                             <p className="title">Information</p>
                             <div className="content">
                                 <p>My Account</p>
@@ -29,7 +29,7 @@ class Footer extends Component {
                                 <p>Your Orders</p>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
+                        <div className="col-lg-3 col-md-6 text-center">
                             <p className="title">Follow Us</p>
                             <div className="content">
                                 <a href="" class="hover-fb"><i class="fab fa-facebook-f"></i></a>

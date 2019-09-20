@@ -15,7 +15,7 @@ class Product extends Component {
               <div className="img-container p-2"
               onClick = {() => value.handleDetail(id)}
               >
-                <Link to="/details">
+                <Link to={`/details/${id}`}>
                   <img src={img} width="200px" height="350px" alt={title} className="card-img-top" />  
                 </Link>
                 <button className="cart-btn" disabled={inCart ? true : false}
@@ -33,7 +33,7 @@ class Product extends Component {
             </ProductConsumer>
             <div className="card-footer product-info"> 
             <p className="mb-0 text-title">{title}</p>
-            <p className="mb-0 font-italic text-title ">$ {price}</p>
+            <p className="mb-0 font-italic text-title ">${price}</p>
             </div>
             </div>
         </ProductWrapper>
@@ -87,12 +87,15 @@ const ProductWrapper = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
-  background: var(--lightBlue);
+  font-size: 14px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #f82e56;
   color: var(--mainWhite);
   border: none;
-  font-size: 1.4rem;
   border-radius: 0.5rem 0 0 0;
-  transition: all 0.5s linear;
+  transition: all 0.4s linear;
   transform: translate(100%, 100%);
 }
 .img-container:hover .cart-btn {
