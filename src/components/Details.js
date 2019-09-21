@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context';
-import { ButtonContainer } from './Navbar';
 class Details extends Component {
-
+  componentDidMount() {
+    window.scrollTo(0,0);
+  }
   render() {
 
     return (
@@ -13,11 +14,11 @@ class Details extends Component {
           return (
             <div className="container py-5 details">
               <div className="row">
-                <div className="col-col-10 mx-auto text-center text-blue my-3">
-                  <h1>{title}</h1>
+                <div className=" my-4">
+                
                 </div>
               </div>
-              <div className="row">
+              <div className="row my-3">
                 <div className="col-col-10 col-md-5 col-md-3 mx-auto my-3">
                   <img src={`/${img}`} className="img-fluid" alt={title} />
                 </div>
@@ -37,14 +38,22 @@ class Details extends Component {
                   <p className="text-muted lead">{info}</p>
                   <div>
                     <Link to="/">
-                    <button type="button" class="btn btn-dark text-uppercase">Back To Products</button>
+                    <button type="button" className="btn btn-dark text-uppercase">Back To Products</button>
                     </Link>
                       <button cart disabled={inCart ? true: false} 
                     onClick={() => {
                       value.addToCart(id);
                       value.openModal(id);
-                    }} type="button" class="btn btn-danger text-uppercase"> {inCart ? "In Cart" : "Add To Cart"}</button>
+                    }} type="button" className="btn btn-danger text-uppercase"> {inCart ? "In Cart" : "Add To Cart"}</button>
                      
+                  </div>
+                </div>
+              </div>
+              <div className="row my-4">
+                <div className="text-title text-center w-100 font-weight-bold">
+                  <h4>Related Products</h4>
+                  <div className="col-md-3">
+
                   </div>
                 </div>
               </div>
