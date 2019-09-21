@@ -12,10 +12,10 @@ class Slider extends Component {
                     </ol>
                     <div className="carousel-inner" role="listbox">
                         <div className="carousel-item active">
-                            <img alt="" src="img/slider-3.jpg" class="w-100" />
+                            <img alt="" src="img/slider-3.jpg" className="w-100" />
                         </div>
                         <div className="carousel-item">
-                            <img alt="" src="img/slider-4.jpg" class="w-100" />
+                            <img alt="" src="img/slider-4.jpg" className="w-100" />
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
@@ -28,7 +28,7 @@ class Slider extends Component {
                     </a>
                 </div>
                 <div className="container promotion my-4">
-                    <div class="row">
+                    <div className="row">
                        <div className="col-md-4">
                             <div className="promo-item">
                                 <div className="layout"><div></div></div>

@@ -28,6 +28,9 @@ class Category extends Component {
                 <li className={value.filterName === 'Jacket'? " menu-item menu-item-current" : " menu-item"}>
                   <p className="nav-link text-title menu-link" onClick = {() => value.onFilter('Jacket')}>Jacket</p>
                 </li>
+                <li className={value.filterName === 'Dress'? " menu-item menu-item-current" : " menu-item"}>
+                  <p className="nav-link text-title menu-link" onClick = {() => value.onFilter('Dress')}>Dress</p>
+                </li>
               </ul>
             </div>
 
