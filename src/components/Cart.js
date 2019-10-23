@@ -19,21 +19,22 @@ class Cart extends Component {
                     <div className="row">
                       <div className="col-lg-8">
                         <CartColumns />
-                        <CartList />
+                        <CartList value={value} />
                       </div>
                       <div className="col-lg-4">
                         <CartTotal value={value} />
                       </div>
                     </div>
                   </div>
-
                 </React.Fragment>
               );
             } else {
               return (
                 <React.Fragment>
                 <img alt="" src="img/cartbanner.png" className="w-100"/>
-                <h3 className="text-title text-center py-3">Your Cart Is Empty</h3>
+                <div style={{height: "200px"}}>
+                <h3 className="text-title text-center mt-4 py-3">Your Cart Is Empty</h3>
+                </div>
                 </React.Fragment>
               )
             }

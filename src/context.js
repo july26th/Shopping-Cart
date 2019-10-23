@@ -139,7 +139,7 @@ class ProductProvider extends Component {
       };
     }, this.addTotals);
   };
-  clearCart = (id) => {
+  clearCart = () => {
     this.setState(() => {
       return {
         cart: []

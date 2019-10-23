@@ -49,14 +49,6 @@ class Details extends Component {
                   </div>
                 </div>
               </div>
-              <div className="row my-4">
-                <div className="text-title text-center w-100 font-weight-bold">
-                  <h4>Related Products</h4>
-                  <div className="col-md-3">
-
-                  </div>
-                </div>
-              </div>
             </div>
           );
         }}

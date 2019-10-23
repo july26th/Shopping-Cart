@@ -32,10 +32,10 @@ class Footer extends Component {
                         <div className="col-lg-3 col-md-6 text-center">
                             <p className="title">Follow Us</p>
                             <div className="content">
-                                <a href="" className="hover-fb"><i className="fab fa-facebook-f"></i></a>
-                                <a href="" className="hover-twitter"><i className="fab fa-twitter"></i></a>
-                                <a href="" className="hover-pinterest"><i className="fab fa-pinterest"></i></a>
-                                <a href="" className="hover-linkedin"><i className="fab fa-linkedin-in"></i></a>
+                                <div className="hover"><i className="fab fa-facebook-f"></i></div>
+                                <div className="hover"><i className="fab fa-twitter"></i></div>
+                                <div className="hover"><i className="fab fa-pinterest"></i></div>
+                                <div className="hover"><i className="fab fa-linkedin-in"></i></div>
                             </div>
                             <p className="title">Opened Time</p>
                             <div className="content">

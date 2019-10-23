@@ -21,9 +21,10 @@ class CartTotal extends Component {
               </div>
               </div>
               <hr />
+              <span>Subtotal </span>${cartTotal + 20}
             </div>
             <Link to="/">
-                <button className="btn btn-dark w-100 text-uppercase mb-3 px-5" 
+                <button className="btn btn-dark w-100 mb-3 px-5" 
                 type="button" onClick={() => clearCart()}>
                   Proceed To Checkout
                 </button>

@@ -4,7 +4,9 @@ class Default extends Component {
   render() {
 
       return (
-        <h3>404...Page Not Found</h3>
+        <div className="pt-4 text-center w-100">
+        <img  src="img/error-404.png" alt="" />
+        </div>
       );
               
 }
